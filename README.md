@@ -1,59 +1,75 @@
-# Petnet
+# PetNet
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+Aplicación web para gestionar refugios y adopciones de mascotas (perros) orientada a conectar refugios con adoptantes potenciales. El objetivo de PetNet es facilitar la publicación de perros en adopción por parte de los refugios y agilizar el proceso para que consigan una familia.
 
-## Development server
+## Descripción
 
-To start a local development server, run:
+- Gestiona fichas de perros (perfil, estado, salud, fotos).
+- Permite a adoptantes registrarse, explorar y solicitar adopciones.
+- Orientado inicialmente a refugios; más adelante, portal público para adopciones.
+
+## Tecnologías
+
+- **Framework**: Angular 20 (standalone, routing)
+- **Estilos**: SCSS
+- **Gestión**: Git (flujo de ramas `feature/` y `bugfix/`)
+
+---
+
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 20.3.8.
+
+## Servidor de desarrollo
+
+Para iniciar un servidor de desarrollo local, ejecuta:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Una vez en ejecución, abre `http://localhost:4200/`. La aplicación recargará automáticamente al modificar archivos fuente.
 
-## Code scaffolding
+## Generación de código (scaffolding)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular CLI incluye herramientas potentes de scaffolding. Para generar un nuevo componente, ejecuta:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para listar esquemas disponibles (como `components`, `directives` o `pipes`), ejecuta:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+## Construcción (build)
 
-To build the project run:
+Para construir el proyecto, ejecuta:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Esto compilará el proyecto y almacenará artefactos en `dist/`. El build de producción aplica optimizaciones de rendimiento.
 
-## Running unit tests
+## Ejecutar tests unitarios
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para ejecutar tests unitarios con [Karma](https://karma-runner.github.io):
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## Tests end-to-end
 
-For end-to-end (e2e) testing, run:
+Para pruebas e2e, ejecuta:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Angular CLI no incluye por defecto un framework e2e; elige el que mejor se adapte a tus necesidades.
 
-## Additional Resources
+## Recursos adicionales
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para más información sobre Angular CLI, visita la [documentación oficial](https://angular.dev/tools/cli).
