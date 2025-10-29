@@ -1,14 +1,15 @@
 /** @type {import('jest').Config} */
 module.exports = {
   preset: 'jest-preset-angular',
-  testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  testEnvironment: 'jest-preset-angular/environments/jest-jsdom-env',
+  setupFilesAfterEnv: ['jest-preset-angular/setup-env/zone', '<rootDir>/setup-jest.ts'],
   testMatch: ['**/?(*.)+(spec).+(ts)'],
   transform: {
     '^.+\\.(ts|mjs|html)$': [
       'jest-preset-angular',
       {
         tsconfig: '<rootDir>/tsconfig.spec.json',
+        stringifyContentPathRegex: '\\.(html)$',
       },
     ],
   },
