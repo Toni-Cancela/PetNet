@@ -54,10 +54,17 @@ Esto compilará el proyecto y almacenará artefactos en `dist/`. El build de pro
 
 ## Ejecutar tests unitarios
 
-Para ejecutar tests unitarios con [Karma](https://karma-runner.github.io):
+Usamos **Jest** para los tests unitarios.
 
 ```bash
-ng test
+npm run test
+```
+
+Modos útiles:
+
+```bash
+npm run test:watch   # ejecución en watch mode
+npm run test:ci      # ejecución serial para CI
 ```
 
 ## Tests end-to-end
